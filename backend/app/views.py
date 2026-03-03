@@ -8,6 +8,7 @@ from app.serializers import ProjectSerializer, TagSerializer, TodoSerializer
 
 
 class ProjectViewSet(ModelViewSet):
+    queryset = Project.objects.all()
     serializer_class = ProjectSerializer
     permission_classes = (IsAuthenticated, IsOwner)
 
@@ -24,6 +25,7 @@ class TagViewSet(ReadOnlyModelViewSet):
     permission_classes = [IsAuthenticated]
 
 class TodoViewSet(ModelViewSet):
+    queryset = Todo.objects.all()
     serializer_class = TodoSerializer
     permission_classes = [IsAuthenticated]
 

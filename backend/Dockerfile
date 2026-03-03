@@ -21,11 +21,16 @@ COPY . .
 
 RUN chown -R django:django /app
 
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
 USER django
 
 EXPOSE 8000
 
-CMD ["gunicorn", "project.wsgi:application", \
+ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["gunicorn", "blog.wsgi:application", \
      "--bind", "0.0.0.0:8000", \
      "--workers", "3", \
      "--timeout", "120"]
