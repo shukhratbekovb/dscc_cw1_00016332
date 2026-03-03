@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/boburbek/Desktop/dscc_cw1_00016332/frontend/app/page.tsx"],"sourcesContent":["'use client';\n\nimport { useEffect } from 'react';\nimport { useRouter } from 'next/navigation';\nimport { useAuthStore } from '@/store/auth';\n\nexport default function HomePage() {\n  const router = useRouter();\n  const accessToken = useAuthStore((state) => state.accessToken);\n  const isInitialized = useAuthStore((state) => state.isInitialized);\n\n  useEffect(() => {\n    if (!isInitialized) return;\n\n    if (accessToken) {\n      router.push('/dashboard');\n    } else {\n      router.push('/login');\n    }\n  }, [accessToken, isInitialized, router]);\n\n  return <div />;\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AACA;;;AAJA;;;;AAMe,SAAS;;IACtB,MAAM,SAAS,IAAA,8JAAS;IACxB,MAAM,cAAc,IAAA,4IAAY;8CAAC,CAAC,QAAU,MAAM,WAAW;;IAC7D,MAAM,gBAAgB,IAAA,4IAAY;gDAAC,CAAC,QAAU,MAAM,aAAa;;IAEjE,IAAA,sLAAS;8BAAC;YACR,IAAI,CAAC,eAAe;YAEpB,IAAI,aAAa;gBACf,OAAO,IAAI,CAAC;YACd,OAAO;gBACL,OAAO,IAAI,CAAC;YACd;QACF;6BAAG;QAAC;QAAa;QAAe;KAAO;IAEvC,qBAAO,yMAAC;;;;;AACV;GAhBwB;;QACP,8JAAS;QACJ,4IAAY;QACV,4IAAY;;;KAHZ"}},
+    {"offset": {"line": 63, "column": 0}, "map": {"version":3,"sources":["file:///Users/boburbek/Desktop/dscc_cw1_00016332/frontend/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}}]
+}

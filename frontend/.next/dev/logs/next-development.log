@@ -1,0 +1,1235 @@
+[00:00:01.135] Server  ERROR   (node:12462) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/boburbek/Desktop/dscc_cw1_00016332/frontend/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/boburbek/Desktop/dscc_cw1_00016332/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[00:00:01.174] Server  LOG     
+[00:00:01.174] Server  LOG       We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:01.174] Server  LOG       The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:01.174] Server  LOG       	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:01.175] Server  LOG     
+[00:00:01.296] Server  LOG     ✓ Ready in 1108ms
+[00:00:08.096] Server  ERROR   (node:12462) Warning: `--localstorage-file` was provided without a valid path
+[00:00:08.209] Server  WARN    ⚠ Cross origin request detected from 192.168.0.24 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:08.357] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:00:12.990] Browser LOG     [v0] Attempting login with username: admin
+[00:00:12.991] Browser LOG     [v0] API Request: POST /jwt/create
+[00:00:12.991] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:00:12.991] Browser LOG     [v0] Error status: 404
+[00:00:12.991] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:00:12.991] Browser LOG     [v0] Login error: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://test.api.it911.uz","data":"{\"username\":\"admin\",\"password\":\"1234\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/jwt/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError@http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:4873:14\nsettle@http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6115:192\nonloadend@http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6631:186\n@http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7437:66","status":404}
+[00:00:14.138] Browser LOG     [v0] Attempting login with username: admin
+[00:00:14.138] Browser LOG     [v0] API Request: POST /jwt/create
+[00:00:14.138] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:00:14.138] Browser LOG     [v0] Error status: 404
+[00:00:14.138] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:00:14.138] Browser LOG     [v0] Login error: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://test.api.it911.uz","data":"{\"username\":\"admin\",\"password\":\"1234\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/jwt/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError@http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:4873:14\nsettle@http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6115:192\nonloadend@http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6631:186\n@http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7437:66","status":404}
+[00:00:54.632] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:54.749] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:01:02.305] Browser LOG     [v0] Attempting login with username: admin
+[00:01:02.305] Browser LOG     [v0] API Request: POST /jwt/create
+[00:01:02.305] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:02.305] Browser LOG     [v0] Error status: 404
+[00:01:02.305] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:02.305] Browser LOG     [v0] Login error: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://test.api.it911.uz","data":"{\"username\":\"admin\",\"password\":\"1234\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/jwt/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6115:16)\n    at XMLHttpRequest.onloadend (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6631:186)\n    at Axios.request (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7437:49)\n    at async handleLogin (http://192.168.0.24:3000/_next/static/chunks/frontend_98dc00df._.js:317:30)","status":404}
+[00:01:14.223] Server  LOG     ✓ Compiled in 74ms
+[00:01:21.910] Browser LOG     [v0] Attempting login with username: admin
+[00:01:21.910] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:01:21.910] Browser LOG     [v0] API Request: POST /api/jwt/create
+[00:01:23.438] Browser LOG     [v0] API Response: 200 /api/jwt/create
+[00:01:23.438] Browser LOG     [v0] Login successful, tokens received
+[00:01:23.924] Browser LOG     [v0] API Request: GET /projects/
+[00:01:23.924] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:23.924] Browser LOG     [v0] Error status: 404
+[00:01:23.924] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:24.938] Browser LOG     [v0] API Request: GET /projects/
+[00:01:24.939] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:24.939] Browser LOG     [v0] Error status: 404
+[00:01:24.939] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:26.956] Browser LOG     [v0] API Request: GET /projects/
+[00:01:26.956] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:26.956] Browser LOG     [v0] Error status: 404
+[00:01:26.956] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:30.968] Browser LOG     [v0] API Request: GET /projects/
+[00:01:30.968] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:30.968] Browser LOG     [v0] Error status: 404
+[00:01:30.968] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:40.257] Server  LOG     ✓ Compiled in 39ms
+[00:01:40.364] Browser LOG     [v0] API Request: GET /projects/
+[00:01:40.364] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:40.364] Browser LOG     [v0] Error status: 404
+[00:01:40.364] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:41.382] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:01:41.382] Browser LOG     [v0] API Request: GET /projects/
+[00:01:41.382] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:41.382] Browser LOG     [v0] Error status: 404
+[00:01:41.382] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:41.788] Server  LOG     ✓ Compiled in 35ms
+[00:01:43.401] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:01:43.401] Browser LOG     [v0] API Request: GET /projects/
+[00:01:43.401] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:43.401] Browser LOG     [v0] Error status: 404
+[00:01:43.401] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:45.758] Server  LOG     ✓ Compiled in 36ms
+[00:01:47.420] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:01:47.420] Browser LOG     [v0] API Request: GET /projects/
+[00:01:47.420] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:47.420] Browser LOG     [v0] Error status: 404
+[00:01:47.420] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:49.710] Server  LOG     ✓ Compiled in 26ms
+[00:01:49.814] Browser LOG     [v0] API Request: GET /projects/
+[00:01:49.814] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:49.814] Browser LOG     [v0] Error status: 404
+[00:01:49.814] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:50.833] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:01:50.833] Browser LOG     [v0] API Request: GET /projects/
+[00:01:50.833] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:50.833] Browser LOG     [v0] Error status: 404
+[00:01:50.833] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:52.847] Browser LOG     [v0] API Request: GET /projects/
+[00:01:52.848] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:52.848] Browser LOG     [v0] Error status: 404
+[00:01:52.848] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:01:56.870] Browser LOG     [v0] API Request: GET /projects/
+[00:01:56.870] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:01:56.870] Browser LOG     [v0] Error status: 404
+[00:01:56.870] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:02:00.113] Server  LOG     ✓ Compiled in 31ms
+[00:02:00.228] Browser LOG     [v0] API Request: GET /projects/
+[00:02:00.228] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:02:00.228] Browser LOG     [v0] Error status: 404
+[00:02:00.228] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:02:01.231] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:02:01.231] Browser LOG     [v0] API Request: GET /api/projects/
+[00:02:01.375] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:02:03.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:03.969] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:02:03.969] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:02:03.969] Browser LOG     [v0] API Request: GET /api/projects/
+[00:02:03.969] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:03:18.097] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:03:18.097] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:05:59.964] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:05:59.965] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:03.189] Browser LOG     [v0] Saving project: {"description":"укеуек","name":"куееук"}
+[00:06:03.189] Browser LOG     [v0] API Request: GET /api/projects/
+[00:06:03.189] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:06:13.540] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:13.540] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:21.203] Browser LOG     [v0] Saving project: {"description":"dqdqqwd","name":"postt"}
+[00:06:21.203] Browser LOG     [v0] API Request: GET /api/projects/
+[00:06:21.203] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:12:33.420] Server  LOG     ✓ Compiled in 72ms
+[00:12:33.545] Browser LOG     [v0] API Request: GET /api/projects/
+[00:12:34.545] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:12:37.523] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:37.728] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:12:37.728] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:12:37.728] Browser LOG     [v0] API Request: GET /api/projects/
+[00:12:37.728] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:12:38.558] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:12:38.558] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:12:42.746] Browser LOG     [v0] Saving project: {"description":"ывфыв","name":"выфвф"}
+[00:12:42.746] Browser LOG     [v0] API Request: POST /api/projects/
+[00:12:43.114] Browser LOG     [v0] API Response: 201 /api/projects/
+[00:12:43.114] Browser LOG     [v0] API Request: GET /api/projects/
+[00:12:43.114] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:13:33.712] Browser LOG     [v0] API Request: GET /api/projects/1/
+[00:13:33.712] Browser LOG     [v0] API Request: GET /projects/1/todos/
+[00:13:33.712] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:13:33.712] Browser LOG     [v0] Error status: 404
+[00:13:33.712] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:13:33.878] Browser LOG     [v0] API Response: 200 /api/projects/1/
+[00:13:34.727] Browser LOG     [v0] API Request: GET /projects/1/todos/
+[00:13:34.727] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:13:34.727] Browser LOG     [v0] Error status: 404
+[00:13:34.727] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:13:36.745] Browser LOG     [v0] API Request: GET /projects/1/todos/
+[00:13:36.745] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:13:36.745] Browser LOG     [v0] Error status: 404
+[00:13:36.745] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:13:40.758] Browser LOG     [v0] API Request: GET /projects/1/todos/
+[00:13:40.758] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:13:40.758] Browser LOG     [v0] Error status: 404
+[00:13:40.758] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:14:09.157] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:09.157] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:12.095] Browser LOG     [v0] Saving project: {"description":"ывфыв","name":"овфырофроыарф"}
+[00:14:12.095] Browser LOG     [v0] API Request: PATCH /api/projects/1/
+[00:14:12.268] Browser LOG     [v0] API Response: 200 /api/projects/1/
+[00:14:12.268] Browser LOG     [v0] API Request: GET /api/projects/
+[00:14:12.268] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:14:16.214] Browser LOG     [v0] Deleting project: 1
+[00:14:16.214] Browser LOG     [v0] API Request: DELETE /api/projects/1/
+[00:14:16.214] Browser LOG     [v0] API Response: 204 /api/projects/1/
+[00:14:16.214] Browser LOG     [v0] API Request: GET /api/projects/
+[00:14:16.214] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:14:18.426] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:18.597] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:14:18.597] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:14:18.597] Browser LOG     [v0] API Request: GET /api/projects/
+[00:14:18.597] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:15:22.870] Server  LOG     ✓ Compiled in 37ms
+[00:15:28.896] Server  LOG     ✓ Compiled in 43ms
+[00:15:33.743] Server  LOG     ✓ Compiled in 49ms
+[00:15:38.490] Server  LOG     ✓ Compiled in 26ms
+[00:16:04.046] Server  LOG     ✓ Compiled in 38ms
+[00:16:08.240] Server  LOG     ✓ Compiled in 29ms
+[00:16:14.266] Server  LOG     ✓ Compiled in 28ms
+[00:16:19.862] Server  LOG     ✓ Compiled in 37ms
+[00:16:23.423] Server  LOG     ✓ Compiled in 32ms
+[00:17:21.359] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:21.559] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:17:21.559] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:17:21.559] Browser LOG     [v0] API Request: GET /api/projects/
+[00:17:21.559] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:17:22.798] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:17:22.798] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:17:25.780] Browser LOG     [v0] Saving project: {"description":"asa","name":"fafasaf"}
+[00:17:25.780] Browser LOG     [v0] API Request: POST /api/projects/
+[00:17:25.780] Browser LOG     [v0] API Response: 201 /api/projects/
+[00:17:25.780] Browser LOG     [v0] API Request: GET /api/projects/
+[00:17:25.780] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:17:27.281] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:17:27.281] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:17:27.281] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:17:27.281] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:17:31.642] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:31.867] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:17:31.867] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:17:31.867] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:17:31.867] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:17:31.867] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:17:31.867] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:17:48.747] Browser LOG     [v0] API Request: GET /tags/
+[00:17:48.747] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:17:48.747] Browser LOG     [v0] Error status: 404
+[00:17:48.748] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:17:49.762] Browser LOG     [v0] API Request: GET /tags/
+[00:17:49.762] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:17:49.762] Browser LOG     [v0] Error status: 404
+[00:17:49.762] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:17:51.776] Browser LOG     [v0] API Request: GET /tags/
+[00:17:51.776] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:17:51.776] Browser LOG     [v0] Error status: 404
+[00:17:51.776] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:17:55.795] Browser LOG     [v0] API Request: GET /tags/
+[00:17:55.795] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:17:55.795] Browser LOG     [v0] Error status: 404
+[00:17:55.795] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:18:01.505] Server  LOG     ✓ Compiled in 82ms
+[00:18:01.608] Browser LOG     [v0] API Request: GET /tags/
+[00:18:01.608] Browser LOG     [v0] API Error: Request failed with status code 404
+[00:18:01.608] Browser LOG     [v0] Error status: 404
+[00:18:01.608] Browser LOG     [v0] Error data: 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+
+[00:18:02.670] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:18:02.670] Browser LOG     [v0] API Request: GET /api/tags/
+[00:18:02.670] Browser LOG     [v0] API Response: 200 /api/tags/
+[00:18:04.912] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:05.150] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:18:05.150] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:18:05.150] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:18:05.150] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:18:05.150] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:18:05.150] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:18:13.142] Browser LOG     [v0] API Request: GET /api/tags/
+[00:18:13.143] Browser LOG     [v0] API Response: 200 /api/tags/
+[00:18:32.645] Browser LOG     [v0] Saving todo: {"description":"sadsads","due_date":"2004-12-12","priority":"high","status":"in_progress","tags":[],"title":"dsa"}
+[00:18:32.646] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:18:32.810] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:18:50.532] Browser LOG     [v0] Saving todo: {"description":"qweqwe","due_date":"2012-12-12","priority":"medium","status":"pending","tags":[],"title":"sqs"}
+[00:18:50.532] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:18:50.532] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:22:37.817] Server  LOG     ✓ Compiled in 86ms
+[00:23:33.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:33.442] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:23:33.442] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:23:33.442] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:23:33.442] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:23:33.553] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:23:33.553] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:23:34.320] Browser LOG     [v0] API Request: GET /api/tags/
+[00:23:34.320] Browser LOG     [v0] API Response: 200 /api/tags/
+[00:23:42.106] Browser LOG     [v0] Saving todo: {"description":"ывпы","due_date":"2012-12-12","priority":"medium","status":"pending","tags":[],"title":"впып"}
+[00:23:42.106] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:23:42.106] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:23:53.047] Browser LOG     [v0] Saving todo: {"description":"ФыфВ","due_date":"2026-03-06","priority":"medium","status":"pending","tags":[],"title":"фы"}
+[00:23:53.047] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:23:53.047] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:24:32.027] Server  LOG     ✓ Compiled in 64ms
+[00:24:35.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:35.909] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:24:35.909] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:24:35.909] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:24:35.909] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:24:35.909] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:24:35.909] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:24:37.404] Browser LOG     [v0] API Request: GET /api/tags/
+[00:24:37.404] Browser LOG     [v0] API Response: 200 /api/tags/
+[00:24:44.705] Browser LOG     [v0] Saving todo: {"description":"ВФЫФВФ","due_date":"2026-03-05","priority":"medium","status":"pending","tags":[],"title":"ФЫВФ"}
+[00:24:44.705] Browser LOG     [v0] API Request: POST /api/todos/
+[00:24:44.705] Browser LOG     [v0] API Error: Request failed with status code 400
+[00:24:44.705] Browser LOG     [v0] Error status: 400
+[00:24:44.705] Browser LOG     [v0] Error data: {"status":["\"pending\" is not a valid choice."]}
+[00:24:44.705] Browser ERROR   [v0] Error saving todo: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://test.api.it911.uz","data":"{\"title\":\"ФЫВФ\",\"description\":\"ВФЫФВФ\",\"status\":\"pending\",\"priority\":\"medium\",\"due_date\":\"2026-03-05\",\"tags\":[],\"project\":2}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyNTU4NTE4LCJpYXQiOjE3NzI1NTY3MTgsImp0aSI6Ijg3MjY0Yjg5MzgxMjRiOTc4NWYzNzA4YTU2NGJiNTVjIiwidXNlcl9pZCI6IjIifQ.fjF0vbZe3CHuQ5_HycI3lNnoBEWA_lypNjRwCQehu50","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/todos/","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6115:16)\n    at XMLHttpRequest.onloadend (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6631:186)\n    at Axios.request (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7437:49)\n    at async handleSaveTodo (http://192.168.0.24:3000/_next/static/chunks/frontend_a9c99bc3._.js:2224:17)\n    at async handleSave (http://192.168.0.24:3000/_next/static/chunks/frontend_a9c99bc3._.js:2043:13)\n    at async handleSubmit (http://192.168.0.24:3000/_next/static/chunks/frontend_a9c99bc3._.js:1691:13)","status":400}
+[00:25:06.971] Browser LOG     [v0] Saving todo: {"description":"ФЫАФЫФААФ","due_date":"2026-03-05","priority":"medium","status":"in_progress","tags":[],"title":"ФЫВ"}
+[00:25:06.971] Browser LOG     [v0] API Request: POST /api/todos/
+[00:25:06.971] Browser LOG     [v0] API Error: Request failed with status code 400
+[00:25:06.971] Browser LOG     [v0] Error status: 400
+[00:25:06.971] Browser LOG     [v0] Error data: {"status":["\"in_progress\" is not a valid choice."]}
+[00:25:06.971] Browser ERROR   [v0] Error saving todo: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://test.api.it911.uz","data":"{\"title\":\"ФЫВ\",\"description\":\"ФЫАФЫФААФ\",\"status\":\"in_progress\",\"priority\":\"medium\",\"due_date\":\"2026-03-05\",\"tags\":[],\"project\":2}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyNTU4NTE4LCJpYXQiOjE3NzI1NTY3MTgsImp0aSI6Ijg3MjY0Yjg5MzgxMjRiOTc4NWYzNzA4YTU2NGJiNTVjIiwidXNlcl9pZCI6IjIifQ.fjF0vbZe3CHuQ5_HycI3lNnoBEWA_lypNjRwCQehu50","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/todos/","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6115:16)\n    at XMLHttpRequest.onloadend (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6631:186)\n    at Axios.request (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7437:49)\n    at async handleSaveTodo (http://192.168.0.24:3000/_next/static/chunks/frontend_a9c99bc3._.js:2224:17)\n    at async handleSave (http://192.168.0.24:3000/_next/static/chunks/frontend_a9c99bc3._.js:2043:13)\n    at async handleSubmit (http://192.168.0.24:3000/_next/static/chunks/frontend_a9c99bc3._.js:1691:13)","status":400}
+[00:26:41.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:41.961] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:26:41.961] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:26:41.961] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:26:41.961] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:26:41.961] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:26:41.961] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:26:43.461] Browser LOG     [v0] API Request: GET /api/tags/
+[00:26:43.461] Browser LOG     [v0] API Response: 200 /api/tags/
+[00:26:59.722] Server  LOG     ✓ Compiled in 44ms
+[00:27:15.545] Server  LOG     ✓ Compiled in 30ms
+[00:27:17.699] Server  LOG     ✓ Compiled in 31ms
+[00:27:20.764] Server  LOG     ✓ Compiled in 30ms
+[00:27:31.473] Server  LOG     ✓ Compiled in 39ms
+[00:27:34.748] Server  LOG     ✓ Compiled in 27ms
+[00:27:51.125] Browser LOG     [v0] Saving todo: {"description":"etwetw","due_date":"2026-03-03","priority":"medium","status":"new","tags":[],"title":"ewe"}
+[00:27:51.125] Browser LOG     [v0] API Request: POST /api/todos/
+[00:27:51.390] Browser LOG     [v0] API Response: 201 /api/todos/
+[00:27:51.390] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:27:51.390] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:27:51.390] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'color')
+[00:28:46.539] Server  LOG     ✓ Compiled in 49ms
+[00:28:46.645] Browser ERROR   ./frontend/components/todo-form.tsx:183:1
+Parsing ecmascript source code failed
+  181 |     </form>
+  182 |   );
+> 183 | }
+      | ^
+  184 |
+  185 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/components/todo-form.tsx [Client Component Browser]
+    ./frontend/components/todo-modal.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/components/todo-form.tsx [Client Component SSR]
+    ./frontend/components/todo-modal.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:28:52.507] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:28:52.532] Server  LOG     ✓ Compiled in 34ms
+[00:28:52.715] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'color')
+[00:28:52.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:53.191] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:28:53.191] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:28:53.191] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:28:53.191] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:28:53.191] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:28:53.191] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:28:53.191] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'color')
+[00:29:36.162] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:36.221] Server  LOG     ✓ Compiled in 35ms
+[00:29:36.498] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:36.757] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:29:36.757] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:29:36.757] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:29:36.757] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:29:36.757] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:29:36.757] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:29:36.757] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'color')
+[00:29:57.144] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:57.235] Server  LOG     ✓ Compiled in 29ms
+[00:29:57.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:57.777] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:29:57.777] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:29:57.777] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:29:57.777] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:29:57.777] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:29:57.777] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'variant')
+[00:29:57.777] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:36:35.234] Server  LOG     ✓ Compiled in 150ms
+[00:36:35.547] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:35.547] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:38.783] Server  ERROR   ⨯ ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+
+
+./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+
+[00:36:38.915] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:38.915] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:39.274] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:39.274] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:39.426] Browser ERROR   uncaughtError: Error: ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+
+[00:36:39.550] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:39.550] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:39.668] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:39.668] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:36:56.254] Server  LOG     ✓ Compiled in 94ms
+[00:36:56.582] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:56.838] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:36:56.839] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:36:56.839] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:36:56.839] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:36:56.839] Browser LOG     [v0] API Error: Request failed with status code 401
+[00:36:56.839] Browser LOG     [v0] Error status: 401
+[00:36:56.839] Browser LOG     [v0] Error data: {"code":"token_not_valid","detail":"Given token not valid for any token type","messages":[{"message":"Token is expired","token_class":"AccessToken","token_type":"access"}]}
+[00:36:56.839] Browser LOG     [v0] API Error: Request failed with status code 401
+[00:36:56.839] Browser LOG     [v0] Error status: 401
+[00:36:56.839] Browser LOG     [v0] Error data: {"code":"token_not_valid","detail":"Given token not valid for any token type","messages":[{"message":"Token is expired","token_class":"AccessToken","token_type":"access"}]}
+[00:36:56.839] Browser LOG     [v0] Token refresh failed: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"refresh\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MjY0MzExOCwiaWF0IjoxNzcyNTU2NzE4LCJqdGkiOiJiYmFiNTJlNDI2Y2E0NmU2OGI0NWY3NGZjY2Y5N2M4YiIsInVzZXJfaWQiOiIyIn0.vQoIb0zBl4zFOn2umQaTTvK6nRv30T3ys71MvdRhFik\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"https://test.api.it911.uz/jwt/refresh/","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6115:16)\n    at XMLHttpRequest.onloadend (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6631:186)\n    at Axios.request (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7437:49)\n    at async initializeApiClient.use (http://192.168.0.24:3000/_next/static/chunks/frontend_da0aa5ac._.js:125:38)\n    at async Axios.request (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7433:20)\n    at async ProjectContent.useQuery (http://192.168.0.24:3000/_next/static/chunks/frontend_a9c99bc3._.js:2114:34)","status":404}
+[00:36:56.848] Browser LOG     [v0] Token refresh failed: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"refresh\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MjY0MzExOCwiaWF0IjoxNzcyNTU2NzE4LCJqdGkiOiJiYmFiNTJlNDI2Y2E0NmU2OGI0NWY3NGZjY2Y5N2M4YiIsInVzZXJfaWQiOiIyIn0.vQoIb0zBl4zFOn2umQaTTvK6nRv30T3ys71MvdRhFik\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"https://test.api.it911.uz/jwt/refresh/","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6115:16)\n    at XMLHttpRequest.onloadend (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:6631:186)\n    at Axios.request (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7437:49)\n    at async initializeApiClient.use (http://192.168.0.24:3000/_next/static/chunks/frontend_da0aa5ac._.js:125:38)\n    at async Axios.request (http://192.168.0.24:3000/_next/static/chunks/9e883_32f3cc2c._.js:7433:20)\n    at async ProjectContent.useQuery (http://192.168.0.24:3000/_next/static/chunks/frontend_a9c99bc3._.js:2126:34)","status":404}
+[00:36:57.115] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:57.545] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:38:43.496] Browser LOG     [v0] Attempting login with username: admin
+[00:38:43.496] Browser LOG     [v0] API Request: POST /api/jwt/create
+[00:38:45.255] Browser LOG     [v0] API Response: 200 /api/jwt/create
+[00:38:45.255] Browser LOG     [v0] Login successful, tokens received
+[00:38:45.472] Browser LOG     [v0] API Request: GET /api/projects/
+[00:38:45.472] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:38:48.422] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:38:48.422] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:38:48.422] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:38:48.422] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:38:48.422] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'variant')
+[00:39:51.674] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:51.927] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:39:51.927] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:39:51.927] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:39:51.927] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:39:51.927] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:39:51.927] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:39:51.927] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'variant')
+[00:40:07.236] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:40:07.316] Server  LOG     ✓ Compiled in 36ms
+[00:40:07.563] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:07.803] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:40:07.803] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:40:07.803] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:40:07.803] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:40:07.803] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:40:07.803] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:40:07.993] Browser ERROR   ./frontend/components/todo-form.tsx:183:1
+Parsing ecmascript source code failed
+  181 |     </form>
+  182 |   );
+> 183 | }
+      | ^
+  184 |
+  185 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/components/todo-form.tsx [Client Component Browser]
+    ./frontend/components/todo-modal.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/components/todo-form.tsx [Client Component SSR]
+    ./frontend/components/todo-modal.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:07.993] Browser ERROR   ./frontend/app/projects/[id]/page.tsx:9:1
+Export TodoCard doesn't exist in target module
+   7 | import { ProtectedRoute } from '@/components/protected-route';
+   8 | import { Navbar } from '@/components/navbar';
+>  9 | import { TodoCard } from '@/components/todo-card';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { FilterBar } from '@/components/filter-bar';
+  11 | import { TodoModal } from '@/components/todo-modal';
+  12 | import { Button } from '@/components/ui/button';
+
+The export TodoCard was not found in module [project]/frontend/components/todo-card.tsx [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/projects/[id]/page.tsx [Client Component Browser]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/projects/[id]/page.tsx [Client Component SSR]
+    ./frontend/app/projects/[id]/page.tsx [Server Component]
+[00:40:09.369] Server  LOG     ✓ Compiled in 36ms
+[00:40:16.375] Server  LOG     ✓ Compiled in 55ms
+[00:40:21.385] Server  LOG     ✓ Compiled in 32ms
+[00:40:33.889] Server  LOG     ✓ Compiled in 35ms
+[00:40:36.642] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:36.977] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:40:36.977] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:40:36.977] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:40:36.977] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:40:36.977] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:40:36.977] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:40:42.262] Browser LOG     [v0] API Request: GET /api/todos/1/
+[00:40:42.262] Browser LOG     [v0] API Response: 200 /api/todos/1/
+[00:40:51.674] Browser LOG     [v0] API Request: GET /api/tags/
+[00:40:51.674] Browser LOG     [v0] API Response: 200 /api/tags/
+[00:42:29.322] Browser LOG     [v0] API Request: GET /api/projects/
+[00:42:29.322] Browser LOG     [v0] API Response: 200 /api/projects/
+[00:45:37.554] Browser LOG     [v0] Saving todo: {"description":"etwetw","due_date":null,"status":"new","tags":[],"title":"Test"}
+[00:45:37.554] Browser LOG     [v0] API Request: PATCH /api/todos/1/
+[00:45:37.872] Browser LOG     [v0] API Response: 200 /api/todos/1/
+[00:45:37.872] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:45:37.872] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:45:43.776] Browser LOG     [v0] API Request: GET /api/todos/1/
+[00:45:43.776] Browser LOG     [v0] API Response: 200 /api/todos/1/
+[00:45:49.442] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:45:49.442] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:48:48.692] Browser LOG     [v0] API Request: GET /api/tags/
+[00:48:48.692] Browser LOG     [v0] API Response: 200 /api/tags/
+[00:49:48.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:48.287] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:49:48.287] Browser LOG     [v0] API Client initialized with baseURL: https://test.api.it911.uz
+[00:49:48.287] Browser LOG     [v0] API Request: GET /api/projects/2/
+[00:49:48.287] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:49:48.287] Browser LOG     [v0] API Response: 200 /api/projects/2/
+[00:49:48.287] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:49:49.945] Browser LOG     [v0] API Request: GET /api/tags/
+[00:49:49.945] Browser LOG     [v0] API Response: 200 /api/tags/
+[00:49:52.630] Browser LOG     [v0] Saving todo: {"description":"etwetw","due_date":null,"status":"new","tags":[1],"title":"Test"}
+[00:49:52.630] Browser LOG     [v0] API Request: PATCH /api/todos/1/
+[00:49:52.631] Browser LOG     [v0] API Response: 200 /api/todos/1/
+[00:49:52.631] Browser LOG     [v0] API Request: GET /api/todos?project_id=2/
+[00:49:52.631] Browser LOG     [v0] API Response: 200 /api/todos?project_id=2/
+[00:49:52.631] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `TodoCard`. 
+[00:52:48.880] Browser LOG     [v0] API Request: GET /api/projects/
+[00:52:48.880] Browser LOG     [v0] API Response: 200 /api/projects/

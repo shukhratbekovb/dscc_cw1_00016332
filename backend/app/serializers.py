@@ -30,6 +30,7 @@ class TodoSerializer(serializers.ModelSerializer):
             "status",
             "project",
             "tags",
+            "due_date",
             "created_at",
             "updated_at",
         ]

@@ -13,7 +13,7 @@ class Project(models.Model):
 
 class Tag(models.Model):
     name = models.CharField(max_length=100)
-
+    color = models.CharField(max_length=7, default="#ff0000")
     def __str__(self):
         return self.name
 
@@ -45,6 +45,8 @@ class Todo(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
 
     status = models.CharField(max_length=20, choices=STATUS, default="new")
+    due_date = models.DateField(null=True, blank=True)
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

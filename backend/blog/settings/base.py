@@ -4,7 +4,8 @@ from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+# SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = "django-insecure-q^@26d9j2-y!d)_xk&y2-ef#$1=9-f&n(5gxqv2)b=rn5^p9ds"
 
 INSTALLED_APPS = [
     'jazzmin',
