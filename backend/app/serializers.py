@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from app.models import Project, Tag
+from app.models import Project, Tag, Todo
 
 
 class ProjectSerializer(serializers.ModelSerializer):
@@ -13,3 +13,24 @@ class TagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tag
         fields = "__all__"
+
+class TodoSerializer(serializers.ModelSerializer):
+    tags = serializers.PrimaryKeyRelatedField(
+        queryset=Tag.objects.all(),
+        many=True,
+        required=False
+    )
+
+    class Meta:
+        model = Todo
+        fields = [
+            "id",
+            "title",
+            "description",
+            "status",
+            "project",
+            "tags",
+            "created_at",
+            "updated_at",
+        ]
+        read_only_fields = ["created_at", "updated_at"]
