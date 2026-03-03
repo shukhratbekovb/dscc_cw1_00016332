@@ -44,3 +44,4 @@ services:
         - web
 volumes:
   db_data:
+  static_volume:
