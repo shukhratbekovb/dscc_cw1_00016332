@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework.test import APITestCase
 from rest_framework import status
-from .models import Project
+from .models import Project, Tag
 
 
 class ProjectAPITest(APITestCase):
@@ -77,4 +77,64 @@ class ProjectAPITest(APITestCase):
         response = self.client.delete(f"{self.url}{self.project2.pk}/")
 
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+class TagAPITest(APITestCase):
+
+    def setUp(self):
+        self.user = User.objects.create_user(
+            username="testuser",
+            password="1234"
+        )
+
+        self.tag1 = Tag.objects.create(name="Backend")
+        self.tag2 = Tag.objects.create(name="Frontend")
+
+        self.list_url = "/api/tags/"
+        self.detail_url = f"/api/tags/{self.tag1.pk}/"
+
+    def test_can_get_tag_list(self):
+        self.client.force_authenticate(user=self.user)
+
+        response = self.client.get(self.list_url)
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 2)
+
+    def test_can_get_single_tag(self):
+        self.client.force_authenticate(user=self.user)
+
+        response = self.client.get(self.detail_url)
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data["name"], "Backend")
+
+    def test_cannot_create_tag(self):
+        self.client.force_authenticate(user=self.user)
+
+        response = self.client.post(self.list_url, {
+            "name": "DevOps"
+        })
+
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_cannot_update_tag(self):
+        self.client.force_authenticate(user=self.user)
+
+        response = self.client.put(
+            self.detail_url,
+            {"name": "Hacked"}
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_cannot_delete_tag(self):
+        self.client.force_authenticate(user=self.user)
+
+        response = self.client.delete(self.detail_url)
+
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_unauthorized_user_cannot_access(self):
+        response = self.client.get(self.list_url)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
