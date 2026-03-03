@@ -19,10 +19,12 @@ RUN pip install --upgrade pip \
 
 COPY . .
 
-RUN chown -R django:django /app
+RUN python manage.py collectstatic --noinput
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+
+RUN chown -R django:django /app
 
 USER django
 
