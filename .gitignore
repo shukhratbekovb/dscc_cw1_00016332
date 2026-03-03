@@ -1,5 +1,34 @@
-.idea
-.DS_Store
-venv
-*.pyc
+# Python
 __pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtualenv
+venv
+.venv
+env
+
+# Django
+media
+staticfiles
+
+# IDE
+.idea
+.vscode
+
+# Git
+.git
+.gitignore
+
+# OS
+.DS_Store
+
+# Env
+.env
+.env.*
+
+# Frontend
+node_modules
