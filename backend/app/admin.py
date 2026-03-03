@@ -19,8 +19,8 @@ class ProjectAdmin(admin.ModelAdmin):
 
 @admin.register(Todo)
 class TodoAdmin(admin.ModelAdmin):
-    list_display = ('name', 'user', 'project', 'status', 'created_at')
+    list_display = ('title', 'user', 'project', 'status', 'created_at')
     search_fields = ('name',)
     list_filter = ('user', 'project', 'status')
-    ordering = ('name', 'created_at', 'status')
+    ordering = ('title', 'created_at', 'status')
 
