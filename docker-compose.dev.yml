@@ -12,6 +12,16 @@ services:
       depends_on:
         postgres:
           condition: service_healthy
+    frontend:
+      build:
+        context: ./frontend
+        dockerfile: Dockerfile
+      container_name: nextjs-app
+      depends_on:
+        - web
+      ports:
+        - "3005:3000"
+      restart: always
     postgres:
         image: 'postgres:17'
         container_name: postgres

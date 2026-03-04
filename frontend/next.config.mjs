@@ -1,11 +1,35 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
+  reactStrictMode: true,
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
   },
+  poweredByHeader: false,
+  typedRoutes: true,
+  output: "standalone",
+  transpilePackages: ["@t3-oss/env-nextjs", "@t3-oss/env-core"],
   images: {
-    unoptimized: true,
+    qualities: [75, 100],
+    
   },
-}
+  reactCompiler: false,
+  headers: async () => {
+    return [
+      {
+        source: "/:path*{/}?",
+        headers: [
+          {
+            key: "X-Accel-Buffering",
+            value: "no",
+          },
+        ],
+      }
+    ];
+  },
+};
+
+
 
 export default nextConfig

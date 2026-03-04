@@ -11,10 +11,10 @@ interface FilterBarProps {
 }
 
 const statuses: { value: TodoStatus; label: string }[] = [
-  { value: 'pending', label: 'Pending' },
-  { value: 'in_progress', label: 'In Progress' },
+  { value: 'new', label: 'New' },
+  { value: 'process', label: 'In Process' },
   { value: 'completed', label: 'Completed' },
-  { value: 'archived', label: 'Archived' },
+  { value: 'canceled', label: 'Canceled' },
 ];
 
 export function FilterBar({ selectedStatus, onStatusChange }: FilterBarProps) {
