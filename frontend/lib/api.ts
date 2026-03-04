@@ -124,7 +124,7 @@ export const projectsApi = {
 // Todos API
 export const todosApi = {
   listByProject: (projectId: number) =>
-    getApiClient().get(`/api/todos?project_id=${projectId}/`),
+    getApiClient().get(`/api/todos?project=${projectId}/`),
 
   retrieve: (todoId: number) =>
     getApiClient().get(`/api/todos/${todoId}/`),

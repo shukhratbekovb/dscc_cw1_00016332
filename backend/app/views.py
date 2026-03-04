@@ -1,7 +1,9 @@
 from rest_framework.exceptions import PermissionDenied
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
+from django_filters.rest_framework import DjangoFilterBackend
 
+from app.filters import TodoFilter
 from app.models import Project, Tag, Todo
 from app.permissions import IsOwner
 from app.serializers import ProjectSerializer, TagSerializer, TodoSerializer
@@ -28,6 +30,8 @@ class TodoViewSet(ModelViewSet):
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
     permission_classes = [IsAuthenticated]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = TodoFilter
 
     def get_queryset(self):
         return Todo.objects.filter(user=self.request.user)
