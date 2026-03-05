@@ -11,6 +11,7 @@ concurrency:
 jobs:
   ci:
     runs-on: ubuntu-latest
+
     services:
       postgres:
         image: postgres:17
@@ -25,9 +26,11 @@ jobs:
           --health-interval=5s
           --health-timeout=5s
           --health-retries=10
+
     defaults:
       run:
         working-directory: backend
+
     env:
       DJANGO_SETTINGS_MODULE: blog.settings.dev
       SECRET_KEY: ci-secret-key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -37,6 +40,7 @@ jobs:
       POSTGRES_PASSWORD: 1234
       POSTGRES_HOST: 127.0.0.1
       POSTGRES_PORT: 5432
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -61,11 +65,14 @@ jobs:
       - name: Run tests (pytest)
         run: pytest
 
+
   build_and_push:
     needs: ci
     runs-on: ubuntu-latest
+
     permissions:
       contents: read
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -115,39 +122,40 @@ jobs:
           tags: ${{ steps.meta_frontend.outputs.tags }}
           labels: ${{ steps.meta_frontend.outputs.labels }}
 
+
   deploy:
-  needs: build_and_push
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+    needs: build_and_push
+    runs-on: ubuntu-latest
 
-    - name: Ensure remote directories exist
-      uses: appleboy/ssh-action@v1.2.0
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          mkdir -p ~/opt/dscc_cw1_00016332/deploy
-          mkdir -p ~/opt/dscc_cw1_00016332/nginx
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Copy compose + nginx + deploy script
-      uses: appleboy/scp-action@v0.1.7
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: "deploy/deploy.sh,docker-compose.prod.yml,nginx/default.conf"
-        target: "~/opt/dscc_cw1_00016332/"
+      - name: Ensure remote directories exist
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            mkdir -p ~/opt/dscc_cw1_00016332/deploy
+            mkdir -p ~/opt/dscc_cw1_00016332/nginx
 
-    - name: Deploy over SSH
-      uses: appleboy/ssh-action@v1.2.0
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          chmod +x ~/opt/dscc_cw1_00016332/deploy/deploy.sh
-          APP_DIR=~/opt/dscc_cw1_00016332 ~/opt/dscc_cw1_00016332/deploy/deploy.sh
-            APP_DIR=~/todoapp ~/todoapp/deploy/deploy.sh
+      - name: Copy compose + nginx + deploy script
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "deploy/deploy.sh,docker-compose.prod.yml,nginx/default.conf"
+          target: "~/opt/dscc_cw1_00016332/"
+
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            chmod +x ~/opt/dscc_cw1_00016332/deploy/deploy.sh
+            APP_DIR=~/opt/dscc_cw1_00016332 ~/opt/dscc_cw1_00016332/deploy/deploy.sh
