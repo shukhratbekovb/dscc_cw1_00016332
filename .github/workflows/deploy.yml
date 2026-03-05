@@ -116,36 +116,38 @@ jobs:
           labels: ${{ steps.meta_frontend.outputs.labels }}
 
   deploy:
-    needs: build_and_push
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  needs: build_and_push
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
 
-      - name: Ensure remote directories exist
-        uses: appleboy/ssh-action@v1.2.0
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            mkdir -p ~/todoapp/deploy ~/todoapp/nginx
+    - name: Ensure remote directories exist
+      uses: appleboy/ssh-action@v1.2.0
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          mkdir -p ~/opt/dscc_cw1_00016332/deploy
+          mkdir -p ~/opt/dscc_cw1_00016332/nginx
 
-      - name: Copy compose + nginx + deploy script
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "deploy/deploy.sh,docker-compose.prod.yml,nginx/default.conf"
-          target: "~/todoapp/"
+    - name: Copy compose + nginx + deploy script
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        source: "deploy/deploy.sh,docker-compose.prod.yml,nginx/default.conf"
+        target: "~/opt/dscc_cw1_00016332/"
 
-      - name: Deploy over SSH
-        uses: appleboy/ssh-action@v1.2.0
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            chmod +x ~/todoapp/deploy/deploy.sh
+    - name: Deploy over SSH
+      uses: appleboy/ssh-action@v1.2.0
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          chmod +x ~/opt/dscc_cw1_00016332/deploy/deploy.sh
+          APP_DIR=~/opt/dscc_cw1_00016332 ~/opt/dscc_cw1_00016332/deploy/deploy.sh
             APP_DIR=~/todoapp ~/todoapp/deploy/deploy.sh
