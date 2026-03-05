@@ -40,8 +40,7 @@ export default function RegisterPage() {
                 id="username"
                 type="text"
                 placeholder="Choose a username"
-                defaultValue="newuser"
-                disabled
+              
               />
             </div>
 
@@ -51,8 +50,7 @@ export default function RegisterPage() {
                 id="email"
                 type="email"
                 placeholder="Enter your email"
-                defaultValue="newuser@example.com"
-                disabled
+                
               />
             </div>
 
@@ -62,8 +60,7 @@ export default function RegisterPage() {
                 id="password"
                 type="password"
                 placeholder="Create a password"
-                defaultValue="password"
-                disabled
+                
               />
             </div>
 
@@ -73,8 +70,7 @@ export default function RegisterPage() {
                 id="passwordConfirm"
                 type="password"
                 placeholder="Confirm your password"
-                defaultValue="password"
-                disabled
+                
               />
             </div>
 
