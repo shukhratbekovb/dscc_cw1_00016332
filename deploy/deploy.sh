@@ -1,23 +1,40 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APP_DIR="${APP_DIR:-$HOME/todoapp}"
+APP_DIR="${APP_DIR:-$HOME/opt/dscc_cw1_00016332}"
 COMPOSE_FILE="${COMPOSE_FILE:-docker-compose.prod.yml}"
 
 cd "$APP_DIR"
 
+echo "Starting deploy in: $APP_DIR"
+
 if ! command -v docker >/dev/null 2>&1; then
-  echo "docker not found on server"
+  echo "Docker not installed"
   exit 1
 fi
 
-echo "Deploying in: $APP_DIR"
-
-# Pull latest images referenced by compose
+echo "Pulling latest images..."
 docker compose -f "$COMPOSE_FILE" pull
 
-# Update backend first (nginx can keep serving frontend/static)
-docker compose -f "$COMPOSE_FILE" up -d --no-deps --remove-orphans web
+echo "Starting postgres..."
+docker compose -f "$COMPOSE_FILE" up -d postgres
+
+echo "Waiting for postgres to become healthy..."
+
+for i in {1..30}; do
+  STATUS=$(docker inspect --format='{{.State.Health.Status}}' postgres 2>/dev/null || echo "starting")
+
+  if [ "$STATUS" = "healthy" ]; then
+    echo "Postgres is ready"
+    break
+  fi
+
+  echo "Waiting for postgres... ($i)"
+  sleep 2
+done
+
+echo "Updating backend..."
+docker compose -f "$COMPOSE_FILE" up -d --no-deps web
 
 echo "Running migrations..."
 docker compose -f "$COMPOSE_FILE" exec -T web python manage.py migrate --noinput
@@ -25,13 +42,16 @@ docker compose -f "$COMPOSE_FILE" exec -T web python manage.py migrate --noinput
 echo "Collecting static..."
 docker compose -f "$COMPOSE_FILE" exec -T web python manage.py collectstatic --noinput
 
-# Update frontend next
-docker compose -f "$COMPOSE_FILE" up -d --no-deps --remove-orphans frontend
+echo "Updating frontend..."
+docker compose -f "$COMPOSE_FILE" up -d --no-deps frontend
 
-# Ensure all services are up (postgres/nginx)
-docker compose -f "$COMPOSE_FILE" up -d --remove-orphans
+echo "Ensuring all services running..."
+docker compose -f "$COMPOSE_FILE" up -d nginx
 
-# Reload nginx without restarting container (best-effort)
+echo "Reloading nginx..."
 docker exec nginx nginx -s reload >/dev/null 2>&1 || true
 
-echo "Done."
+echo "Cleaning unused images..."
+docker image prune -f
+
+echo "Deploy finished successfully 🚀"
