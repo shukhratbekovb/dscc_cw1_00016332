@@ -6,7 +6,7 @@ from app.models import Project, Tag, Todo
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
-        fields = ('id', 'name', 'description')
+        fields = ("id", "name", "description")
 
 
 class TagSerializer(serializers.ModelSerializer):
@@ -14,11 +14,10 @@ class TagSerializer(serializers.ModelSerializer):
         model = Tag
         fields = "__all__"
 
+
 class TodoSerializer(serializers.ModelSerializer):
     tags = serializers.PrimaryKeyRelatedField(
-        queryset=Tag.objects.all(),
-        many=True,
-        required=False
+        queryset=Tag.objects.all(), many=True, required=False
     )
 
     class Meta:

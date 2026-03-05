@@ -14,6 +14,7 @@ class Project(models.Model):
 class Tag(models.Model):
     name = models.CharField(max_length=100)
     color = models.CharField(max_length=7, default="#ff0000")
+
     def __str__(self):
         return self.name
 
@@ -23,18 +24,10 @@ class Tag(models.Model):
 
 class Todo(models.Model):
     STATUS = (
-        (
-            "process", "Process"
-        ),
-        (
-            "completed", "Completed"
-        ),
-        (
-            "new", "New"
-        ),
-        (
-            "canceled", "Canceled"
-        )
+        ("process", "Process"),
+        ("completed", "Completed"),
+        ("new", "New"),
+        ("canceled", "Canceled"),
     )
 
     title = models.CharField(max_length=256)

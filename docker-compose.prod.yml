@@ -1,6 +1,6 @@
 services:
     web:
-      image: "shukhratbekovb/todoapp-backend:latest"
+      image: "${DOCKERHUB_USERNAME:-shukhratbekovb}/todoapp-backend:${IMAGE_TAG:-latest}"
       container_name: web
       env_file:
         - prod.env
@@ -27,7 +27,7 @@ services:
           interval: 5s
           retries: 5
     frontend:
-      image: "shukhratbekovb/todoapp-frontend:latest"
+      image: "${DOCKERHUB_USERNAME:-shukhratbekovb}/todoapp-frontend:${IMAGE_TAG:-latest}"
       container_name: nextjs-app
       depends_on:
         - web

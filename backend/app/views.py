@@ -26,6 +26,7 @@ class TagViewSet(ReadOnlyModelViewSet):
     serializer_class = TagSerializer
     permission_classes = [IsAuthenticated]
 
+
 class TodoViewSet(ModelViewSet):
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
@@ -40,7 +41,9 @@ class TodoViewSet(ModelViewSet):
         project = serializer.validated_data["project"]
 
         if project.user != self.request.user:
-            raise PermissionDenied("You cannot create a TODO in a project that you do not own.")
+            raise PermissionDenied(
+                "You cannot create a TODO in a project that you do not own."
+            )
 
         serializer.save(user=self.request.user)
 
@@ -48,6 +51,8 @@ class TodoViewSet(ModelViewSet):
         project = serializer.validated_data.get("project", self.get_object().project)
 
         if project.user != self.request.user:
-            raise PermissionDenied("You cannot move TODO to project that you do not own.")
+            raise PermissionDenied(
+                "You cannot move TODO to project that you do not own."
+            )
 
         serializer.save()
