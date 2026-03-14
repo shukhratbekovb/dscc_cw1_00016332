@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Edit2, Trash2 } from 'lucide-react';
+import { ClipboardList, SquarePen, Trash } from 'lucide-react';
 import type { Project } from '@/lib/types';
 
 interface ProjectCardProps {
@@ -12,22 +12,29 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project, onEdit, onDelete }: ProjectCardProps) {
   return (
-    <Card className="p-6 flex flex-col gap-4 hover:shadow-md transition-shadow">
+    <Card className="p-6 flex flex-col gap-4 hover:shadow-lg transition-all duration-200">
+      
+      {/* Project info */}
       <div className="flex-1">
         <h3 className="text-lg font-semibold">{project.name}</h3>
+
         <p className="text-sm text-muted-foreground mt-2 line-clamp-2">
           {project.description || 'No description provided'}
         </p>
       </div>
-      
-      <div className="flex gap-2">
+
+      {/* Actions */}
+      <div className="flex items-center gap-2">
+
+        {/* View Todos */}
         <Link href={`/projects/${project.id}`} className="flex-1">
-          <Button variant="outline" className="w-full">
+          <Button variant="outline" className="w-full gap-2">
+            <ClipboardList className="h-4 w-4" />
             View Todos
-            <ArrowRight className="h-4 w-4 ml-2" />
           </Button>
         </Link>
-        
+
+        {/* Edit */}
         {onEdit && (
           <Button
             variant="ghost"
@@ -37,10 +44,11 @@ export function ProjectCard({ project, onEdit, onDelete }: ProjectCardProps) {
               onEdit(project);
             }}
           >
-            <Edit2 className="h-4 w-4" />
+            <SquarePen className="h-4 w-4" />
           </Button>
         )}
-        
+
+        {/* Delete */}
         {onDelete && (
           <Button
             variant="ghost"
@@ -50,11 +58,10 @@ export function ProjectCard({ project, onEdit, onDelete }: ProjectCardProps) {
               onDelete(project.id);
             }}
           >
-            <Trash2 className="h-4 w-4 text-destructive" />
+            <Trash className="h-4 w-4 text-destructive" />
           </Button>
         )}
       </div>
     </Card>
   );
 }
-
